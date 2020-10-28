@@ -30,8 +30,6 @@ const Img = styled.img`
 `;
 
 const StyledSlickDots = styled.div`
-  /* width: 100vw; */
-  /* box-sizing: content-box; */
   position: absolute;
   bottom: 10%;
   height: 4px;
@@ -43,11 +41,11 @@ const StyledSlickDots = styled.div`
     margin: 0 auto;
     width: fit-content;
     padding: 0;
-    /* display: flex; */
   }
 
   & ul > li {
     top: -13px;
+    margin: 0;
     height: 120%;
     width: 100px;
   }
