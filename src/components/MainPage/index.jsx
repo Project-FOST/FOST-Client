@@ -47,7 +47,7 @@ const StyledSlickDots = styled.div`
     top: -13px;
     margin: 0;
     height: 120%;
-    width: 100px;
+    width: 8vw;
   }
 `;
 
@@ -55,7 +55,7 @@ const StyledSlickDotsUl = styled.div`
   position: absolute;
   margin: 0;
   top: 0;
-  width: 100px;
+  /* width: 5vw; */
   height: 4px;
   top: 0;
 `;
@@ -83,7 +83,7 @@ const MainPage = () => {
         <ul> {dots} </ul>
       </StyledSlickDots>
     ),
-    customPaging: (i) => <StyledSlickDotsUl></StyledSlickDotsUl>,
+    customPaging: (i) => <StyledSlickDotsUl />,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
