@@ -4,7 +4,8 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './Header';
 import MainPage from './MainPage';
 import Footer from './Footer';
-import ItemList from './ItemList'
+import ItemList from './ItemList';
+import ProductDetail from './ProductDetail';
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" component={MainPage} exact />
-        <Route path="/items/:itemType?" component={ItemList}  />
-        {/* <Route path="/product/:productNo?" component={DetailPage} /> */}
+        <Route path="/items/:itemType?" component={ItemList} />
+        <Route path="/product/:productNo?" component={ProductDetail} />
         {/* <Route path="/login" component={Login} />
         <Route path={['/mypage/:username?']} component={Mypage} />
         <Route path="/signup" component={Signup} />
