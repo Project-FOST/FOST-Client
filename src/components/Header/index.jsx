@@ -6,7 +6,7 @@ import {
   DropdownWrapper,
   DropdownLink,
 } from './index.style';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [isHoverMen, setIsHoverMen] = useState(false);
@@ -21,17 +21,17 @@ const Header = () => {
           <StyledNavLink
             onMouseEnter={() => setIsHoverMen(true)}
             onMouseLeave={() => setIsHoverMen(false)}
-            to="/"
+            to="/items"
             data-category="men"
           >
             MEN
             {isHoverMen && (
               <DropdownWrapper>
                 <Dropdown>
-                  <DropdownLink to="/">아우터</DropdownLink>
-                  <DropdownLink to="/">상의</DropdownLink>
-                  <DropdownLink to="/">하의</DropdownLink>
-                  <DropdownLink to="/">기타</DropdownLink>
+                  <DropdownLink to="/items">아우터</DropdownLink>
+                  <DropdownLink to="/items">상의</DropdownLink>
+                  <DropdownLink to="/items">하의</DropdownLink>
+                  <DropdownLink to="/items">기타</DropdownLink>
                 </Dropdown>
               </DropdownWrapper>
             )}
@@ -40,16 +40,16 @@ const Header = () => {
           <StyledNavLink
             onMouseEnter={() => setIsHoverWomen(true)}
             onMouseLeave={() => setIsHoverWomen(false)}
-            to="/"
+            to="/items"
           >
             WOMEN
             {isHoverWomen && (
               <DropdownWrapper>
                 <Dropdown>
-                  <DropdownLink to="/">아우터</DropdownLink>
-                  <DropdownLink to="/">상의</DropdownLink>
-                  <DropdownLink to="/">하의</DropdownLink>
-                  <DropdownLink to="/">기타</DropdownLink>
+                  <DropdownLink to="/items">아우터</DropdownLink>
+                  <DropdownLink to="/items">상의</DropdownLink>
+                  <DropdownLink to="/items">하의</DropdownLink>
+                  <DropdownLink to="/items">기타</DropdownLink>
                 </Dropdown>
               </DropdownWrapper>
             )}

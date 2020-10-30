@@ -75,7 +75,7 @@ const dummyitems = [
 ];
 
 const MainPage = () => {
-  const [items, setItems] = useState(dummyitems);
+  const [items] = useState(dummyitems);
   const settings = {
     dots: true,
     appendDots: (dots) => (

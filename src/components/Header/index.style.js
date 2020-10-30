@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 
   & > .logo {
     font-family: Helvetica Neue;
@@ -55,8 +56,6 @@ export const DropdownWrapper = styled.div`
 
 export const Dropdown = styled.div`
   background: rgba(255, 255, 255, 0.8);
-  /* position: absolute;
-  top: 0; */
   display: flex;
   flex-direction: column;
   width: 140px;
@@ -68,7 +67,7 @@ export const DropdownLink = styled(NavLink)`
   cursor: pointer;
 
   font-family: Noto Sans KR;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
 
   width: 100%;
@@ -76,8 +75,6 @@ export const DropdownLink = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-
   color: black;
 `;
