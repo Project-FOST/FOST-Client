@@ -161,7 +161,7 @@ const ProductDetail = () => {
           <div className="buy-button">buy it now</div>
         </div>
       </div>
-      <img className="detail-img" src="dummy/product-detail.jpg" />
+      <img className="detail-img" src="dummy/product-detail.jpg" alt="product-detail" />
     </StyledProductDetail>
   );
 };

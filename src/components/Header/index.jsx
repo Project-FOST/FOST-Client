@@ -57,14 +57,14 @@ const Header = () => {
           <StyledNavLink
             onMouseEnter={() => setIsHoverLike(true)}
             onMouseLeave={() => setIsHoverLike(false)}
-            to="/"
+            to="/like/item"
           >
             LIKE
             {isHoverLike && (
               <DropdownWrapper>
                 <Dropdown>
-                  <DropdownLink to="/">찜한 상점</DropdownLink>
-                  <DropdownLink to="/">찜한 옷들</DropdownLink>
+                  <DropdownLink to="/like/store">찜한 상점</DropdownLink>
+                  <DropdownLink to="/like/item">찜한 옷들</DropdownLink>
                 </Dropdown>
               </DropdownWrapper>
             )}

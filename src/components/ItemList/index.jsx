@@ -16,7 +16,7 @@ for (let i = 0; i < 20; i++) {
     date: '5/27/15',
     title: 'Floyd Miles',
     price: '$572.26',
-    imgsrc: 'dummy/rectangle.png',
+    imgsrc: '/dummy/rectangle.png',
   });
 }
 
@@ -39,7 +39,7 @@ const ItemList = withRouter(({ history }) => {
             <div className="date">{item.date}</div>
             <div className="title">{item.title}</div>
             <div className="price">{item.price}</div>
-            <img className="like" src="itemlist/like-button.svg" alt="like"></img>
+            <img className="like" src={'/itemlist/like-button.svg'} alt="like"></img>
           </ItemWrapper>
         ))}
       </StyledItemList>
