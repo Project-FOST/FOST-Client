@@ -6,6 +6,7 @@ import MainPage from './MainPage';
 import Footer from './Footer';
 import ItemList from './ItemList';
 import ProductDetail from './ProductDetail';
+import Login from './Login';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" component={MainPage} exact />
         <Route path="/items/:itemType?" component={ItemList} />
         <Route path="/product/:productNo?" component={ProductDetail} />
-        {/* <Route path="/login" component={Login} />
+        <Route path="/login" component={Login} />
+        {/*
         <Route path={['/mypage/:username?']} component={Mypage} />
         <Route path="/signup" component={Signup} />
         <Route path="/fundings/:id" component={IdolProductList} /> */}
