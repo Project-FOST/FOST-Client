@@ -92,7 +92,7 @@ const Header = () => {
             )}
           </StyledNavLink>
           <StyledNavLink to="/">CART</StyledNavLink>
-          <StyledNavLink to="/">LOGIN</StyledNavLink>
+          <StyledNavLink to="/login">LOGIN</StyledNavLink>
         </div>
       </StyledHeader>
     </>
