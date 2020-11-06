@@ -7,6 +7,8 @@ import Footer from './Footer';
 import ItemList from './ItemList';
 import ProductDetail from './ProductDetail';
 import Login from './Login';
+import QnAWriter from './QnAWriter';
+import QnA from './QnA';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/items/:itemType?" component={ItemList} />
         <Route path="/product/:productNo?" component={ProductDetail} />
         <Route path="/login" component={Login} />
+        <Route path="/qna/write" component={QnAWriter} />
+        <Route path="/qna" component={QnA} />
         {/*
         <Route path={['/mypage/:username?']} component={Mypage} />
         <Route path="/signup" component={Signup} />
