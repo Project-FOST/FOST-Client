@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import styled from 'styled-components';
+import { withRouter } from 'react-router-dom';
 
 const StyledQnAWriter = styled.main`
   height: 800px;
@@ -33,7 +34,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const QnAWriter = () => {
+const QnAWriter = withRouter(({ history }) => {
   const [text, setText] = useState('');
   const modules = {
     toolbar: [
@@ -71,11 +72,11 @@ const QnAWriter = () => {
         />
       </WiziwigWrap>
       <ButtonWrap>
-        <Button>글 목록</Button>
-        <Button>등록</Button>
+        <Button onClick={() => history.push('/')}>글 목록</Button>
+        <Button onClick={() => history.push('/')}>등록</Button>
       </ButtonWrap>
     </StyledQnAWriter>
   );
-};
+});
 
 export default QnAWriter;

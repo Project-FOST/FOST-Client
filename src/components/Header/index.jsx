@@ -86,7 +86,7 @@ const Header = () => {
                   <DropdownLink to="/">회원 정보</DropdownLink>
                   <DropdownLink to="/">배송 조회</DropdownLink>
                   <DropdownLink to="/">쿠폰</DropdownLink>
-                  <DropdownLink to="/">Q&A</DropdownLink>
+                  <DropdownLink to="/qna">Q&A</DropdownLink>
                 </Dropdown>
               </DropdownWrapper>
             )}
